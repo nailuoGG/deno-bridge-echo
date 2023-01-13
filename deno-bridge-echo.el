@@ -22,7 +22,20 @@
 
 (require 'deno-bridge)
 (setq deno-bridge-echo-ts-path (concat (file-name-directory load-file-name) "deno-bridge-echo.ts"))
-(deno-bridge-start "echo" deno-bridge-echo-ts-path)
 
+(defun deno-bridge-echo-start ()
+  "Start deno bridge echo."
+  (interactive)
+  (deno-bridge-start "deno-bridge-echo" deno-bridge-echo-ts-path))
+
+
+(defun deno-bridge-echo-restart ()
+  "Restart deno bridge echo and show process."
+  (interactive)
+  (deno-bridge-exit)
+  (deno-bridge-echo-start)
+  (list-processes))
+
+(deno-bridge-echo-start)
 (provide 'deno-bridge-echo)
 ;;; deno-bridge-echo.el ends here
