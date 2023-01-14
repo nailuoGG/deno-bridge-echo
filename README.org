@@ -1,9 +1,7 @@
 * deno-bridge-echo
 
-
-
 ** feature
-- store current visited tab into local HTTP service
+- Save the current visited tab information to a local HTTP serve
 
 [[./images/Tab-sync-flow-chart.svg]]
 #+HEADER: :file ./images/Tab-sync-flow-chart.svg
@@ -38,7 +36,7 @@ Emacs -> Emacs: Assemble link and insert at cursor position
 ** install
 *** user script
 
-install user script from link below [[https://github.com/nailuoGG/deno-bridge-echo/raw/main/monkey.js][Click To Install]]
+Please install the user script located at the following link [[https://github.com/nailuoGG/deno-bridge-echo/raw/main/monkey.js][Click To Install]]
 
 #+begin_src text
 https://github.com/nailuoGG/deno-bridge-echo/raw/main/script.user.js
@@ -46,7 +44,7 @@ https://github.com/nailuoGG/deno-bridge-echo/raw/main/script.user.js
 
 *** Doom Emacs
 
-in package.el
+edit package.el
 #+begin_src emacs-lisp
 (package! deno-bridge-echo
   :ignore t
@@ -54,7 +52,7 @@ in package.el
            :files ("*.el" "*.ts")))
 #+end_src
 
-in config.el
+edit config.el
 
 #+begin_src elisp
 (use-package! deno-bridge-echo
