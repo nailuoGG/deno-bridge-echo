@@ -4,7 +4,7 @@
 // @version      0.1.2
 // @updateURL https://github.com/nailuoGG/deno-bridge-echo/raw/main/monkey.js
 // @downloadURL https://github.com/nailuoGG/deno-bridge-echo/raw/main/monkey.js
-// @description  try to take over the world!
+// @description Store Latest visited Tab into local HTTP server
 // @author       liujiale
 // @connect      localhost
 // @match        https://*/*
