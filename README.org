@@ -15,7 +15,7 @@
 install user script from link below [[https://github.com/nailuoGG/deno-bridge-echo/raw/main/monkey.js][Click To Install]]
 
 #+begin_src text
-https://github.com/nailuoGG/deno-bridge-echo/raw/main/monkey.js
+https://github.com/nailuoGG/deno-bridge-echo/raw/main/script.user.js
 #+end_src
 
 *** Doom Emacs
