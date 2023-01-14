@@ -1,6 +1,31 @@
 * deno-bridge-echo
 
 
+
+** feature
+- store current visited tab into local HTTP service
+
+#+HEADER: :file ./images/Tab-sync-flow-chart.svg
+#+begin_src plantuml
+skinparam svgLinkTarget _parent
+@startuml
+actor User
+
+User -> Firefox: Access page
+Firefox -> "HTTP Server": POST /v1/echo, URL and Title Information
+
+"HTTP Server" -> "HTTP Server": Save Information
+User -> Emacs: "Execute my/insert-jsno-link"
+Emacs -> "HTTP Server":GET /v1/show Retrieve Latest Tab Information
+"HTTP Server" -> Emacs:url and title
+Emacs -> Emacs: Assemble link and insert at cursor position
+@enduml
+#+end_src
+
+#+RESULTS:
+[[file:./images/Tab-sync-flow-chart.svg]]
+
+
 ** requirement
 
 - [[https://deno.land/][deno]]
