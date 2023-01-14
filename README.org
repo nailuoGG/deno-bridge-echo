@@ -1,0 +1,22 @@
+* deno-bridge-echo
+
+
+** install
+
+*** requirement
+
+- deno-bridge
+- deno
+
+*** use-package
+#+begin_src emacs-lisp
+(package! deno-bridge-echo
+  :ignore t
+  :recipe (:host github :repo "nailuoGG/deno-bridge-echo"
+           :files ("*.el" "*.ts")))
+#+end_src
+
+** feature
+
+| api_ |
+|      |
