@@ -3,17 +3,16 @@
 
 ** requirement
 
-
-- deno
-- deno-bridge
-- Tampermonkey
-- Firefox or Chrome
+- [[https://deno.land/][deno]]
+- [[https://github.com/manateelazycat/deno-bridge][deno-bridge]]
+- [[https://www.tampermonkey.net/][Tampermonkey]]
+- [[https://www.mozilla.org/en-US/firefox/new/][Firefox]] or [[https://www.google.com/chrome/][Chrome]]
 
 
 ** install
 *** user script
 
-install user script from link below
+install user script from link below [[https://github.com/nailuoGG/deno-bridge-echo/raw/main/monkey.js][Click To Install]]
 
 #+begin_src text
 https://github.com/nailuoGG/deno-bridge-echo/raw/main/monkey.js
