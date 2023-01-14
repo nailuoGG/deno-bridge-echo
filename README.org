@@ -1,14 +1,27 @@
 * deno-bridge-echo
 
 
-** install
+** requirement
 
-*** requirement
 
-- deno-bridge
 - deno
+- deno-bridge
+- Tampermonkey
+- Firefox or Chrome
 
-*** use-package
+
+** install
+*** user script
+
+install user script from link below
+
+#+begin_src text
+https://github.com/nailuoGG/deno-bridge-echo/raw/main/monkey.js
+#+end_src
+
+*** Doom Emacs
+
+in package.el
 #+begin_src emacs-lisp
 (package! deno-bridge-echo
   :ignore t
@@ -16,7 +29,19 @@
            :files ("*.el" "*.ts")))
 #+end_src
 
-** feature
+in config.el
 
-| api_ |
-|      |
+#+begin_src elisp
+(use-package! deno-bridge-echo
+  :config
+  (defun my/insert-deno-link ()
+    "Insert recently visited Tab from browser"
+    (interactive)
+    (deno-bridge-call "deno-bridge-echo" "getCurrentTab")))
+#+end_src
+
+** usage
+
+| api                 | description                          |
+|---------------------+--------------------------------------|
+| my/insert-deno-link | insert link from current visited tab |
