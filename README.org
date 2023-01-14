@@ -5,6 +5,7 @@
 ** feature
 - store current visited tab into local HTTP service
 
+[[./images/Tab-sync-flow-chart.svg]]
 #+HEADER: :file ./images/Tab-sync-flow-chart.svg
 #+begin_src plantuml
 skinparam svgLinkTarget _parent
