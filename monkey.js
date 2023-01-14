@@ -2,7 +2,7 @@
 // @name         记录当前的Tab
 // @namespace    http://tampermonkey.net/
 // @version      0.1.1
-// @updateURL https://github.com/nailuoGG/deno-bridge-echo/raw/master/monkey.js
+// @updateURL https://github.com/nailuoGG/deno-bridge-echo/raw/main/monkey.js
 // @description  try to take over the world!
 // @author       liujiale
 // @connect      localhost
