@@ -36,7 +36,7 @@ Emacs -> Emacs: Assemble link and insert at cursor position
 ** install
 *** user script
 
-Please install the user script located at the following link [[https://github.com/nailuoGG/deno-bridge-echo/raw/main/monkey.js][Click To Install]]
+Please install the user script located at the following link [[https://github.com/nailuoGG/deno-bridge-echo/raw/main/script.user.js][Click To Install]]
 
 #+begin_src text
 https://github.com/nailuoGG/deno-bridge-echo/raw/main/script.user.js
