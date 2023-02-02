@@ -1,6 +1,7 @@
 import { DenoBridge } from "https://deno.land/x/denobridge@0.0.1/mod.ts";
 
 import { serve } from "https://deno.land/std/http/server.ts";
+import { getChatGptResponse } from './chatgpt';
 
 const bridge = new DenoBridge(
   Deno.args[0],
@@ -28,6 +29,10 @@ async function messageDispatcher(message: string) {
     bridge.evalInEmacs(
       `(insert "[[${data.currentTab.url}][ ${currentTab.title}]]")`
     );
+  }
+  if (funcName === 'getChatGptResponse') {
+    const reply = await getChatGptResponse()
+    bridge.messageToEmacs(reply.text);
   }
 }
 
