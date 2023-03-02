@@ -1,7 +1,7 @@
 import { DenoBridge } from "https://deno.land/x/denobridge@0.0.1/mod.ts";
 
 import { serve } from "https://deno.land/std/http/server.ts";
-import { getChatGptResponse } from './chatgpt';
+import { getChatGptResponse } from './chatgpt.ts';
 
 const bridge = new DenoBridge(
   Deno.args[0],
